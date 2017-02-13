@@ -7,7 +7,7 @@
       "password": "icinga2ondashingr0xx"
     }
   }
-  "icingaweb2": {
+  "icingaweb2" {
      "url": "https://localhost",
      "iframe": false
   }
