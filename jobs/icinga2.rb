@@ -33,6 +33,8 @@ SCHEDULER.every '5s', :first_in => 0 do |job|
   # we'll update the patched meter widget with absolute values (set max dynamically)
   host_meter = icinga.host_count_problems.to_f
   host_meter_max = icinga.host_count_all
+  url = icinga.url
+  iframe = icinga.iframe
   service_meter = icinga.service_count_problems.to_f
   service_meter_max = icinga.service_count_all
 
@@ -111,4 +113,3 @@ SCHEDULER.every '5s', :first_in => 0 do |job|
    value: icinga.host_count_in_downtime.to_s,
    color: 'orange' })
 end
-

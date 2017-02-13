@@ -31,6 +31,10 @@ class Icinga2
   attr_reader :app_starttime
   attr_reader :uptime
 
+  # icingaweb2
+  attr_reader :url
+  attr_reader :iframe
+
   # general stats
   attr_reader :avg_latency
   attr_reader :avg_execution_time
@@ -88,6 +92,8 @@ class Icinga2
         @user = @config["icinga2"]["api"]["user"]
         @password = @config["icinga2"]["api"]["password"]
         @pkiPath = @config["icinga2"]["api"]["pki_path"]
+        @url = @config["icingaweb2"]["url"]
+        @iframe = @config["icingaweb2"]["iframe"]
       else
         @log.warn(sprintf('Config file %s not found! Using default config.', configFile))
         @host = "localhost"
@@ -95,6 +101,8 @@ class Icinga2
         @user = "dashing"
         @password = "icinga2ondashingr0xx"
         @pkiPath = "pki/"
+        @url = "http://localhost"
+        @iframe = false
       end
 
       @apiVersion = "v1" # TODO: allow user to configure version?
