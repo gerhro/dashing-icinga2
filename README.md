@@ -14,8 +14,7 @@
 
 ## Introduction
 
-[Dashing](http://shopify.github.io/dashing/) is a Sinatra based framework
-that lets you build beautiful dashboards.
+[Smashing](https://github.com/Smashing/smashing/wiki) is the spiritual successor to Dashing, is a Sinatra based framework that lets you build beautiful dashboards.
 
 The Icinga 2 dashboard uses the Icinga 2 API to
 visualize what's going on with your monitoring.
@@ -46,13 +45,14 @@ If you have any questions, please hop onto the [Icinga community channels](https
 
 ## License
 
+* Smashing is licensed under the [MIT license](https://github.com/Smashing/smashing/blob/master/MIT-LICENSE).
 * Dashing is licensed under the [MIT license](https://github.com/Shopify/dashing/blob/master/MIT-LICENSE).
 * Icinga specific jobs and dashboards are licensed under the GPLv2+ license.
 
 ## Requirements
 
 * Ruby, Gems and Bundler
-* Dashing Gem
+* Smashing Gem
 * Icinga 2 API (v2.6+)
 
 Example on CentOS 7 with enabled EPEL repository:
@@ -62,7 +62,7 @@ Example on CentOS 7 with enabled EPEL repository:
 Gems:
 
     gem install bundler
-    gem install dashing
+    gem install smashing
 
 In case the installation takes quite long and you do not need any documentation,
 add the `--no-document` flags.
@@ -376,4 +376,3 @@ https://gist.github.com/hussfelt/a6fe71ebd7cce327df29
 
 * Add ticket system demo (e.g. github.com/icinga/icinga2)
 * Add Grafana dashboard
-* Replace Dashing with [Smashing](https://github.com/SmashingDashboard/smashing)
