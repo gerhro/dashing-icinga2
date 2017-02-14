@@ -1,14 +1,14 @@
 {
-  },
-     "url": "https://localhost",
-     "iframe": false
-  }
-  "icingaweb2": {
   "icinga2": {
     "api": {
       "host": "localhost",
-      "password": "icinga2ondashingr0xx"
-      "user": "dashing",
-    }
       "port": 5665,
+      "user": "dashing",
+      "password": "icinga2ondashingr0xx"
+    }
+  },
+  "icingaweb2": {
+     "url": "https://localhost",
+     "iframe": false
+  }
 }
